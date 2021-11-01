@@ -1,0 +1,57 @@
+#price-section {
+  background-color: #252B42;
+  padding: 80px 0;
+}
+
+.price {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 240px 50px 15px 10px;
+  background-image: url('../../img/forrest.png');
+  background-size: cover;
+}
+
+.price__div {
+  margin-top: 100px;
+}
+
+.price:nth-child(2){
+  background-image: url('../../img/sky.png');
+}
+
+.price:nth-child(3){
+  background-image: url('../../img/coin.png');
+}
+
+.price:nth-child(4){
+  background-image: url('../../img/birja.png');
+}
+
+.price-span {
+  display: block;
+  text-align: start;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.price-title {
+  text-align: start;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+}
+
+.price-btn {
+  border-radius: 40px;
+  font-size: 14px;
+  padding: 6px 30px;
+}
