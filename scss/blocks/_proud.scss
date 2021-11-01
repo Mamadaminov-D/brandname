@@ -1,0 +1,92 @@
+#proud-section {
+  background-color: #252B42;
+  padding: 100px 0 80px 0;
+  color: #000;
+  text-align: center;
+}
+
+.proud__div {
+  margin-top: 80px;
+}
+
+.proud {
+  background-color: #fff;
+  padding: 50px 50px 30px 50px;
+}
+
+.proud__span {
+  display: block;
+}
+
+.proud__span:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.proud-title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.1px;
+  color: #252B42;
+  margin-bottom: 35px;
+}
+
+.proud-text {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  color: #737373;
+}
+
+.proud__dolr {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 57px;
+  letter-spacing: 0.2px;
+  color: #23A6F0;
+  margin-bottom: 0;
+}
+
+.dolr__span {
+  display: block;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  color: #8EC2F2;
+  margin-bottom: 35px;
+}
+
+.proud__span {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #252B42;
+  text-align: start;
+  position: relative;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: -25px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../../img/ptichka.svg");
+  }
+}
+
+@media screen and (max-width:1095px) {
+  .proud__div {
+    flex-flow: row wrap;
+    align-items: center;
+  }
+
+  .proud:not(:last-child) {
+    margin-bottom: 40px;
+  }
+}

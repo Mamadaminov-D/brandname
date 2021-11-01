@@ -55,3 +55,24 @@
   font-size: 14px;
   padding: 6px 30px;
 }
+
+@media screen and (max-width:1220px) {
+  .price__div {
+    flex-flow: row wrap;
+  }
+
+  .price:not(:last-child) {
+    margin-bottom:40px ;
+  }
+}
+
+@media screen and (max-width:630px) {
+  .price__div {
+   flex-direction: column;
+   align-items: center;
+  }
+
+  .price:not(:last-child) {
+    margin-bottom:40px ;
+  }
+}
