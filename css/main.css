@@ -574,10 +574,64 @@ img {
   background-color: #23A6F0;
 }
 
+@media screen and (max-width: 905px) {
+  .knop {
+    padding: 4px 10px;
+  }
+  .brn {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .nav-item {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 610px) {
   .hero__content-title {
     font-size: 50px;
     line-height: 70px;
+  }
+}
+
+@media screen and (max-width: 555px) {
+  .nav-item {
+    display: block;
+  }
+  .collapse {
+    text-align: center;
+  }
+  .hero__content-title {
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .hero__content-txt {
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .hero__content-btns {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 30px;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .btn-head {
+    margin-bottom: 25px;
   }
 }
 
@@ -647,6 +701,23 @@ img {
   }
   .card {
     margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .card::before {
+    content: '';
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-image: url("../../img/vector.svg");
+  }
+  .card:nth-child(2)::before {
+    background-image: url("../../img/vector.svg");
+  }
+  .card:nth-child(3)::before {
+    width: 80px;
+    background-image: url("../../img/vector.svg");
   }
 }
 
@@ -758,6 +829,9 @@ img {
   }
   .industry__div-small {
     margin-bottom: 80px;
+  }
+  .industry__div-small::before {
+    display: none;
   }
 }
 
@@ -1015,6 +1089,27 @@ footer {
 }
 
 .text-reset {
+  color: #fff !important;
+}
+
+.oq {
+  color: #fff !important;
+}
+
+.text-reset {
   text-decoration: none;
+}
+
+.bx {
+  font-size: 18px;
+}
+
+.social {
+  color: black;
+  font-size: 25px;
+}
+
+.text-uppercase {
+  color: #fff;
 }
 /*# sourceMappingURL=main.css.map */

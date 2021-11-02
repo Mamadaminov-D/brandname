@@ -59,3 +59,20 @@
     margin-bottom: 30px;
   }
 }
+
+@media screen and (max-width:630px) {
+  .card::before {
+    content: '';
+    display: flex;
+    background-image: url('../../img/vector.svg');
+  }
+
+  .card:nth-child(2)::before {
+    background-image: url('../../img/vector.svg');
+  }
+  
+  .card:nth-child(3)::before {
+    width: 80px;
+    background-image: url('../../img/vector.svg');
+  }
+}

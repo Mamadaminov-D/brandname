@@ -100,6 +100,11 @@
    .industry__div-small {
      margin-bottom: 80px;
    }
+
+   .industry__div-small::before {
+     display: none;
+   }
+
  }
 
  @media screen and (max-width:425px) {
