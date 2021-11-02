@@ -31,7 +31,7 @@
             <div class="collapse navbar-collapse" id="mynavbar">
               <ul class="navbar-nav me-auto">
                 <li class="nav-item">
-                  <a class="nav-link" href="javascript:void(0)">Home</a>
+                  <a class="nav-link brn " href="javascript:void(0)">Home</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="javascript:void(0)">Product</a>
@@ -44,8 +44,11 @@
                   <a class="nav-link" href="javascript:void(0)">Contact</a>
                 </li>
               </ul>
-              <button type="button" class="btn btn-primary">Become a member <i class='bx bx-right-arrow-alt'></i>
-              </button>
+              <div class="group">
+                  <a class="link-btn" href="#">Login</a>
+                <button type="button" class="btn  knop">Become a member <i class='bx bx-right-arrow-alt'></i>
+                </button>
+              </div>
             </div>
           </div>
         </nav>
@@ -133,11 +136,10 @@
   </section>
 
   <section id="price-section">
-    <div class="container">
       <h2 class="inner__title mb-3">Industry</h2>
       <p class="inner__txt  mb-3">Problems trying to resolve the conflict between 
         the two major realms of Classical physics: Newtonian mechanics </p>
-        <div class="price__div d-flex justify-content-between">
+        <div class="price__div d-flex justify-content-evenly">
           <div class="price" style="width:270px">
             <div class="price-body">
               <span class="price-span">Tax Management</span>
@@ -171,7 +173,6 @@
             </div>
           </div>
         </div>
-    </div>
   </section>
 
   <section id="proud-section">
@@ -198,6 +199,7 @@
             </div>
           </div>
           <div class="proud">
+            <span class="new__span"><b>New</b></span>
             <div class="proud-body">
               <h4 class="proud-title">Silver</h4>
               <p class="proud-text">Organize across all <br>
@@ -240,7 +242,7 @@
       <span class="input__span">Contact Us</span>
       <h2 class="input__title">Make an Appointment</h2>
 
-      <form class="row g-3">
+      <form class="row g-3 bigg">
         <div class="col-md-4">
           <label for="validationServer01" class="form-label">First name</label>
           <input type="text" class="form-control is-valid" id="validationServer01" value="Mark" required>
@@ -255,40 +257,28 @@
             Looks good!
           </div>
         </div>
-        <div class="col-md-4">
-          <label for="validationServerUsername" class="form-label">Username</label>
-          <div class="input-group has-validation">
-            <span class="input-group-text" id="inputGroupPrepend3">@</span>
-            <input type="text" class="form-control is-invalid" id="validationServerUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
-            <div id="validationServerUsernameFeedback" class="invalid-feedback">
-              Please choose a username.
+       
+        <div class="div d-flex ">
+          <div class="col-md-4 me-3">
+            <label for="validationServer02" class="form-label">Email</label>
+            <input type="email" class="form-control is-valid" id="validationServer02" value="Otto" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+          <div class="col-md-4">
+            <label for="validationServer02" class="form-label">Number</label>
+            <input type="number" class="form-control is-valid" id="validationServer02" value="Otto" required>
+            <div class="valid-feedback">
+              Looks good!
             </div>
           </div>
         </div>
-        <div class="col-md-6">
-          <label for="validationServer03" class="form-label">City</label>
-          <input type="text" class="form-control is-invalid" id="validationServer03" aria-describedby="validationServer03Feedback" required>
-          <div id="validationServer03Feedback" class="invalid-feedback">
-            Please provide a valid city.
-          </div>
-        </div>
-        <div class="col-md-3">
-          <label for="validationServer04" class="form-label">State</label>
-          <select class="form-select is-invalid" id="validationServer04" aria-describedby="validationServer04Feedback" required>
-            <option selected disabled value="">Choose...</option>
-            <option>...</option>
-          </select>
-          <div id="validationServer04Feedback" class="invalid-feedback">
-            Please select a valid state.
-          </div>
-        </div>
-        <div class="col-md-3">
-          <label for="validationServer05" class="form-label">Zip</label>
-          <input type="text" class="form-control is-invalid" id="validationServer05" aria-describedby="validationServer05Feedback" required>
-          <div id="validationServer05Feedback" class="invalid-feedback">
-            Please provide a valid zip.
-          </div>
-        </div>
+
+        <div class="area">
+          <textarea name="text" id="txt" cols="30" rows="10" placeholder="Message"></textarea>
+         </div>
+
         <div class="col-12">
           <div class="form-check">
             <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" aria-describedby="invalidCheck3Feedback" required>
@@ -301,7 +291,7 @@
           </div>
         </div>
         <div class="col-12">
-          <button class="btn btn-primary" type="submit">Submit form</button>
+          <button class="btn input-btn btn-primary" type="submit">Book Appointment</button>
         </div>
       </form>
     </div>
@@ -309,41 +299,6 @@
 
   <footer>
     <footer class="text-center text-lg-start  text-muted">
-      <!-- Section: Social media -->
-      <section
-        class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
-      >
-        <!-- Left -->
-        <div class="me-5 d-none d-lg-block">
-          <span>Get connected with us on social networks:</span>
-        </div>
-        <!-- Left -->
-    
-        <!-- Right -->
-        <div>
-          <a href="" class="me-4 text-reset">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a href="" class="me-4 text-reset">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a href="" class="me-4 text-reset">
-            <i class="fab fa-google"></i>
-          </a>
-          <a href="" class="me-4 text-reset">
-            <i class="fab fa-instagram"></i>
-          </a>
-          <a href="" class="me-4 text-reset">
-            <i class="fab fa-linkedin"></i>
-          </a>
-          <a href="" class="me-4 text-reset">
-            <i class="fab fa-github"></i>
-          </a>
-        </div>
-        <!-- Right -->
-      </section>
-      <!-- Section: Social media -->
-    
       <!-- Section: Links  -->
       <section class="">
         <div class="container text-center text-md-start mt-5">

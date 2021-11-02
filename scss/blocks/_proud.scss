@@ -12,8 +12,20 @@
 .proud {
   background-color: #fff;
   padding: 50px 50px 30px 50px;
+  position: relative;
 }
 
+.new__span {
+  display: block;
+  position: absolute;
+  top: -20px;
+  right: 20px;
+  background-color: #E77C40;
+  color: #fff;
+  padding: 25px 20px;
+  border-radius: 50%;
+  font-size: 18px;
+}
 .proud__span {
   display: block;
 }
